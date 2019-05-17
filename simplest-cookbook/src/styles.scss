@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Responsive Designs
+$media-query-phone: 400px;
+$media-query-small-tablet: 550px;
+$media-query-tablet: 750px;
+$media-query-desktop: 1000px;
+$media-query-desktop-hd: 1200px;
+
+// Fonts
+$font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Colors
+$default-body-text: #222;
+$black: #000;
+$bone-white: #FFF;
+$border-white: #E1E1E1;
+$code: #F1F1F1;
+$link: #1EAEDB;
+$link-hover: #0FA0CE;
+$primary-blue: #33C3F0;
+$data-blue: #11DFC7;
+
+// Borders
+$default-border: 1px solid $black;
+$white-border: 1px solid $border-white;
+$primary-blue-border: 1px solid $primary-blue;
+
+body {
+  font-family: $font-stack !important;
+  color: $default-body-text;
+}
+
+.noLine {
+  text-decoration: none;
+}
+
+.imageShadow {
+  box-shadow: inset 55px 55px 275px 100px black;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  //box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  width: 100%;
+}

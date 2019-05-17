@@ -1,0 +1,16 @@
+@import "../../../../styles";
+
+img {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../../assets/images/shutterstockPeopleShareFood.jpg');
+  z-index: 1;
+}
+
+.introStatement {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  color: $bone-white;
+}

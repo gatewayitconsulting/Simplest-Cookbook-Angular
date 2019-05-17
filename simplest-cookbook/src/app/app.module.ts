@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BannerComponent,
     WelcomeComponent,
-    BannerComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
