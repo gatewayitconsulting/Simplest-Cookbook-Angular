@@ -68,8 +68,9 @@ a {
   clip-path: circle(150% at top right);
 }
 nav {
-  position: sticky;
-  position: -webkit-sticky;
+  //position: sticky;
+  //position: -webkit-sticky;
+  position: fixed;
   top: 0;
   margin: 0;
   padding: 0;
