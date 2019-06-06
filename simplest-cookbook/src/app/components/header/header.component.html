@@ -1,15 +1,15 @@
 <header>
   <nav class="site-nav">
-    <h1 class="logo col-md-4"><a routerLink="/">Simplest Cookbook</a></h1>
+    <h1 class="logo col-md-4"><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Simplest Cookbook</a></h1>
     <div class="menu-toggle">
       <div class="hamburger"></div>
     </div>
-    <ul class="open desktop">
+    <ul class="open desktop col-md-8">
       <li class="dropDown col-md-2">
         <a href="#"><i class="site-nav--icon"></i>About</a>
       </li>
-      <li class="col-md-2"><a href="#"><i class=" site-nav--icon"></i>Recipes</a></li>
-      <li class="col-md-2"><a href="#"><i class=" site-nav--icon"></i>Calculators</a></li>
+      <li class="col-md-2"><a routerLink="/recipes" routerLinkActive="active-link"><i class=" site-nav--icon"></i>Recipes</a></li>
+      <!-- <li class="col-md-2"><a href="#"><i class=" site-nav--icon"></i>Calculators</a></li> -->
     </ul>
   </nav>
 </header>

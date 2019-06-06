@@ -8,8 +8,11 @@
 ******************************************** */
 a {
   color: #1EAEDB;
-  &:hover {
-    color: #0FA0CE;
+}
+
+nav {
+  .active-link {
+    border-bottom: $black 7px solid;
   }
 }
 
