@@ -1,7 +1,7 @@
 <section id="recipe-overview" class="col-md-12">
   <div class="row">
     <div *ngFor="let recipe of recipes$ | async" [class.selected]="recipe.id === selectedId" 
-    class="col-md-3 col-sm-6 card-deck">
+    class="col-md-3 col-sm-6 card-deck mx-auto">
       <a [routerLink]="['/recipe', recipe.id]" class="card">
         <div>
           <img src="https://www.gatewayitconsulting.com/assets/images/pcs/corsairCustomBuild.jpg" class="card-img-top" />
