@@ -1,14 +1,13 @@
 <section id="recipe-overview" class="col-md-12">
-  <h2 class="row">Recipes</h2>
   <div class="row">
-    <div *ngFor="let recipe of recipes$ | async"
-      [class.selected]="recipe.id === selectedId" class="col-md-3">
-      <a [routerLink]="['/recipe', recipe.id]">
-        <div class="col-md-12">
-          <img src="https://www.gatewayitconsulting.com/assets/images/pcs/corsairCustomBuild.jpg" width="225px" />
+    <div *ngFor="let recipe of recipes$ | async" [class.selected]="recipe.id === selectedId" 
+    class="col-md-3 col-sm-6 card-deck">
+      <a [routerLink]="['/recipe', recipe.id]" class="card">
+        <div>
+          <img src="https://www.gatewayitconsulting.com/assets/images/pcs/corsairCustomBuild.jpg" class="card-img-top" />
         </div>
-        <div class="col-md-12">
-          <span class="badge">{{ recipe.name }}</span>
+        <div class="card-body">
+          <h4 class="card-title">{{ recipe.name }}</h4>
         </div>
       </a>
     </div>
