@@ -30,7 +30,8 @@ nav {
 }
 .menu-toggle {
   position: absolute;
-  padding: 0.8em;
+  padding-top: 1.5em;
+  padding-right: 2em;
   top: 1em;
   right: .5em;
   cursor: pointer;
@@ -66,6 +67,12 @@ nav {
   -webkit-transform: translateY(-1px) rotate(-90deg);
   transform: translateY(-1px) rotate(-90deg);
 }
+.site-nav {
+  .col-md-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 .site-nav--open {
   -webkit-clip-path: circle(150% at top right);
   clip-path: circle(150% at top right);
@@ -74,8 +81,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  margin: 0;
-  padding: 0;
+  left: 0;
   z-index: 5;
   ul {
     display: none;
@@ -166,12 +172,10 @@ nav ul.opening {
       }
     }
     .logo {
-      width: 39.3333333333%;
       flex: 1 0 200px;
       padding-left: 0;
     }
     .desktop {
-      width: 56.6666666667%;
       line-height: 1em;
       padding-bottom: .25em;
     }

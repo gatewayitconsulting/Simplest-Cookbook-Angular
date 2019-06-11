@@ -2,9 +2,6 @@ Tablet Navigation Broken
 Make logo span one line in mobile and tablet
 Center items content mobile
 Fix HTTPS issue
-Add meta description to document
 Properly size images
 Serve images in next gen formats
 Change favicon to cookbook icon
-Implement Font Awesome into structure
-Implement search icon and copyright icon

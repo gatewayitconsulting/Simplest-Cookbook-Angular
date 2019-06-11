@@ -1,21 +1,28 @@
 @import "../../../../styles";
 
 #recipe-overview {
-    ul {
-        list-style: none;
+    
+    .card-deck {
+        align-items: stretch;
     }
-    a {
-        color: $black;
-        text-decoration: none;
-        margin-left: 0;
-        margin-right: 0;
-        &:hover {
-            color: $link-hover;
+
+    @media (min-width: 550px) {
+        ul {
+            list-style: none;
         }
-    }
-    .card {
-        width: 18rem;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        a {
+            color: $black;
+            text-decoration: none;
+            margin-left: 0;
+            margin-right: 0;
+            &:hover {
+                color: $link-hover;
+            }
+        }
+        .card {
+            width: 18rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     }
 }
