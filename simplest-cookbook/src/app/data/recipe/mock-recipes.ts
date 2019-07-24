@@ -1,4 +1,4 @@
-import { Recipe } from './recipe';
+import { Recipe } from '../../services/recipe/recipe';
 
 export const RECIPES: Recipe[] = [
   { id: 1, name: 'Toddy Cold Brew' },

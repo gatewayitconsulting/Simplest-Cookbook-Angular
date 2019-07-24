@@ -16,16 +16,10 @@
 
 .introStatement {
   position: absolute;
-  top: 20%;
+  top: 25%;
   width: 100%;
   text-align: center;
   color: $bone-white;
-}
-
-.explore-recipes {
-  position: absolute;
-  top: 50%;
-  width: 100%;
 }
 
 @media (min-width: $media-query-small-tablet) {

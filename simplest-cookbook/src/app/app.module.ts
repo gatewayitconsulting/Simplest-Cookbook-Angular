@@ -9,14 +9,15 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/common/header/header.component';
+import { RecipeComponent } from './components/recipe-detail/recipe.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
-import { RecipeComponent } from './components/recipes/recipe-single/recipe.component';
-import { RecipeOverviewComponent } from './components/recipes/recipe-overview/recipe-overview.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './components/common/footer/footer.component';
 import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
 import { AboutComponent } from './components/about/about.component';
 import { MissionStatementComponent } from './components/about/mission-statement/mission-statement.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,14 @@ import { MissionStatementComponent } from './components/about/mission-statement/
     BannerComponent,
     WelcomeComponent,
     HeaderComponent,
-    RecipesComponent,
     RecipeComponent,
-    RecipeOverviewComponent,
+    RecipesComponent,
     FooterComponent,
     CookingToolsComponent,
     AboutComponent,
-    MissionStatementComponent
+    MissionStatementComponent,
+    MessagesComponent,
+    RecipeListComponent
   ],
   imports: [
     BrowserModule,
