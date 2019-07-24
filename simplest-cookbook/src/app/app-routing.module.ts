@@ -3,8 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
+import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
 
 const routes: Routes = [
+    { 
+      path: 'cooking-tools', 
+      component: CookingToolsComponent 
+    },
     { 
       path: 'recipes', 
       component: RecipesComponent 

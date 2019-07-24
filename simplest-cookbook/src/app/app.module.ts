@@ -14,6 +14,9 @@ import { RecipesComponent } from './components/recipes/recipes.component';
 import { RecipeComponent } from './components/recipes/recipe-single/recipe.component';
 import { RecipeOverviewComponent } from './components/recipes/recipe-overview/recipe-overview.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
+import { AboutComponent } from './components/about/about.component';
+import { MissionStatementComponent } from './components/about/mission-statement/mission-statement.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FooterComponent } from './components/footer/footer.component';
     RecipesComponent,
     RecipeComponent,
     RecipeOverviewComponent,
-    FooterComponent
+    FooterComponent,
+    CookingToolsComponent,
+    AboutComponent,
+    MissionStatementComponent
   ],
   imports: [
     BrowserModule,
