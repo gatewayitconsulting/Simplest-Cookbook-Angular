@@ -4,10 +4,18 @@
     class="col-md-3 col-sm-6 card-deck mx-auto">
       <a routerLink="/recipe/{{recipe.id}}" class="card">
         <div>
-          <img src="https://www.gatewayitconsulting.com/assets/images/pcs/corsairCustomBuild.jpg" class="card-img-top" />
+          <img src="{{recipe.image}}" class="card-img-top" />
         </div>
-        <div class="card-body">
-          <h4 class="card-title">{{ recipe.name }}</h4>
+        <div class="card-body row">
+          <section class="col-md-10">
+              <h4 class="card-title">{{ recipe.name }}</h4>
+          </section>
+          <section class="col-md-2">
+              <span *ngIf="recipe.totalTimeMinutes < 15" class="painless">{{ recipe.totalTimeMinutes }}</span>
+              <span *ngIf="recipe.totalTimeMinutes >= 16 && <= 30" class="quick">{{ recipe.totalTimeMinutes }}</span>
+              <span *ngIf="recipe.totalTimeMinutes >= 31 && <= 60" class="medium">{{ recipe.totalTimeMinutes }}</span>
+              <span *ngIf="recipe.totalTimeMinutes >= 61" class="slow">{{ recipe.totalTimeMinutes }}</span>
+          </section>
         </div>
       </a>
     </div>

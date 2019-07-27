@@ -14,6 +14,11 @@ export class RecipesComponent implements OnInit {
 
   constructor(private recipeService: RecipeService) { }
 
+  painless = false;
+  quick = false;
+  medium = false;
+  slow = false;
+
   ngOnInit() {
     this.getRecipes();
   }
@@ -22,4 +27,10 @@ export class RecipesComponent implements OnInit {
     this.recipeService.getRecipes()
     .subscribe(recipes => this.recipes = recipes);
   }
+
+  // totalTimeMinutes = this.Recipe.totalTimeMinutes;
+
+  // if (totalTimeMinutes < 15) {
+  //   this.painless = true;
+  // }
 }

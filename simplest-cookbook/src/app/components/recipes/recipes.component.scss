@@ -24,5 +24,22 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+        .painless {
+            background-color: lightblue;
+        }
+        .quick {
+            background-color: lightgreen;
+        }
+        .medium {
+            background-color: orange;
+        }
+        .slow {
+            background-color: red;
+        }
     }
 }
