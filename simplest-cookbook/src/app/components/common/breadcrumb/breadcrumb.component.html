@@ -1,0 +1,10 @@
+<section class="col-md-12">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" *ngIf="routerLink != '/'"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page" *ngIf="routerLink == '/recipe-list'">
+        <a routerLink="/recipe-list">Recipes</a>
+      </li>
+    </ol>
+  </nav>
+</section>

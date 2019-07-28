@@ -18,6 +18,7 @@ import { AboutComponent } from './components/about/about.component';
 import { MissionStatementComponent } from './components/about/mission-statement/mission-statement.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
+import { BreadcrumbComponent } from './components/common/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RecipeListComponent } from './components/recipe-list/recipe-list.compon
     AboutComponent,
     MissionStatementComponent,
     MessagesComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,

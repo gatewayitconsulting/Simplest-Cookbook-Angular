@@ -1,6 +1,5 @@
 Tablet Navigation Broken
 Make logo span one line in mobile and tablet
-Center items content mobile
 Fix HTTPS issue
 Properly size images
 Serve images in next gen formats
