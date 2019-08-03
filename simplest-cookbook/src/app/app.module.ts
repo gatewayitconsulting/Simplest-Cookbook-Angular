@@ -20,6 +20,8 @@ import { MissionStatementComponent } from './components/about/mission-statement/
 import { MessagesComponent } from './components/messages/messages.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { BreadcrumbComponent } from './components/common/breadcrumb/breadcrumb.component';
+import { CookTimeComponent } from './components/cook-time/cook-time.component';
+import { DescriptionComponent } from './components/description/description.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { BreadcrumbComponent } from './components/common/breadcrumb/breadcrumb.c
     MissionStatementComponent,
     MessagesComponent,
     RecipeListComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    CookTimeComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,

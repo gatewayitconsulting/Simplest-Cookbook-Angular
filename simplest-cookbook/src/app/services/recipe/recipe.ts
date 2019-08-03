@@ -3,4 +3,5 @@ export class Recipe {
     name: string;
     image: string;
     totalTimeMinutes: number;
+    description: string;
   }
