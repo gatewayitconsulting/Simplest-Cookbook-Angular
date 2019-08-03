@@ -19,6 +19,6 @@ export class BreadcrumbComponent implements OnInit {
   ngOnInit() {
     const breadcrumb =  {customText: 'This is Custom Text', dynamicText: 'Current Recipe'};
     this.ng7BootstrapBreadcrumbService.updateBreadcrumbLabels(breadcrumb);
-    }
+  }
 
 }
