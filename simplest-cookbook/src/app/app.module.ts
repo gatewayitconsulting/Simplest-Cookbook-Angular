@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { Ng7BootstrapBreadcrumbModule } from 'ng7-bootstrap-breadcrumb';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
@@ -39,11 +40,13 @@ import { BreadcrumbComponent } from './components/common/breadcrumb/breadcrumb.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    Ng7BootstrapBreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
   constructor() {
     // Add an icon to the library for convenient access in other components

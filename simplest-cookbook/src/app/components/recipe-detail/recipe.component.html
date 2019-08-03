@@ -1,8 +1,7 @@
-<div *ngIf="recipe" class="col-md-12 text-center">
+<app-breadcrumb class="row"></app-breadcrumb>
+<div *ngIf="recipe" class="col-md-12">
+  <h2>{{recipe.name}}</h2>
   <figure class="row">
-    <img src="{{recipe.image}}" width="50%" height="400px" class="offset-md-3"/>
+    <img src="{{recipe.image}}" width="100%" height="350px" class="col-md-4 offset-md-8"/>
   </figure>
-  <h2>{{recipe.name}} Details</h2>
-  <div><span>id: </span>{{recipe.id}}</div>
-  <button (click)="goBack()" class="btn btn-primary">To Home</button>
 </div>
