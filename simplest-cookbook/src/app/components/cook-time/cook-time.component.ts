@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { Recipe } from '../../services/recipe/recipe';
 import { RecipeService } from '../../services/recipe/recipe.service';
+import { RECIPES } from 'src/app/data/recipe/mock-recipes';
 
 @Component({
   selector: 'app-cook-time',

@@ -1,3 +1,6 @@
 <p>
-  Total Cook Time: {{ recipe.totalTimeMinutes }}
+  Total Time: 
+  <span *ngIf="recipe.minutes > 0">{{recipe.minutes}} minutes </span>
+  <span *ngIf="recipe.hours > 0">{{recipe.hours}} hours </span>
+  <span *ngIf="recipe.days > 0">{{recipe.days}} days </span>
 </p>
