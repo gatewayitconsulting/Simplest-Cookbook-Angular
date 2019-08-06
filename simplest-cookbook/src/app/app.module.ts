@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng7BootstrapBreadcrumbModule } from 'ng7-bootstrap-breadcrumb';
 
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { RecipeListComponent } from './components/recipe-list/recipe-list.compon
 import { BreadcrumbComponent } from './components/common/breadcrumb/breadcrumb.component';
 import { CookTimeComponent } from './components/cook-time/cook-time.component';
 import { DescriptionComponent } from './components/description/description.component';
+import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-ratio-helper/toddy-ratio-helper.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,14 @@ import { DescriptionComponent } from './components/description/description.compo
     RecipeListComponent,
     BreadcrumbComponent,
     CookTimeComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    ToddyRatioHelperComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    NgbModule,
     Ng7BootstrapBreadcrumbModule
   ],
   providers: [],
