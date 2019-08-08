@@ -17,18 +17,6 @@ import { ImageUploadModule } from './components/common/image-upload/image-upload
 import { SectionsModule } from './components/sections/sections.module';
 import { ComponentsModule } from './components/components.module';
 
-import { BasicelementsComponent } from './components/basicelements/basicelements.component';
-import { TypographyComponent } from './components/typography/typography.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
-import { ComponentsComponent } from './components/components.component';
-import { NotificationComponent } from './components/notification/notification.component';
-import { NgbdModalBasic } from './components/modal/modal.component';
-import { FootersAreasComponent } from './components/footers-areas/footers-areas.component';
-import { TablesAreasComponent } from './components/tables-areas/tables-areas.component';
-import { CommentsAreasComponent } from './components/comments-areas/comments-areas.component';
-import { CardsAreasComponent } from './components/cards-areas/cards-areas.component';
-
-
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
