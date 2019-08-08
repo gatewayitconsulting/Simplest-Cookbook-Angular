@@ -27,6 +27,13 @@
     "core-js": "^2.5.4",
     "jquery": "^3.4.1",
     "ng7-bootstrap-breadcrumb": "^1.0.4",
+    "jw-bootstrap-switch-ng2": "2.0.5",
+    "ng2-nouislider": "1.7.13",
+    "ngx-chips": "2.0.0-beta.0",
+    "ngx-gallery": "5.9.1",
+    "nouislider": "12.1.0",
+    "popper.js": "1.14.7",
+    "rellax": "1.7.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

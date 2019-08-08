@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng7BootstrapBreadcrumbModule } from 'ng7-bootstrap-breadcrumb';
+// import { SectionsModule } from './sections/sections.module';
+// import { ComponentsModule } from './components/components.module';
+// import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
@@ -48,6 +52,7 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
     NgbModule,
     Ng7BootstrapBreadcrumbModule
   ],
