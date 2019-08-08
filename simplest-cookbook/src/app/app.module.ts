@@ -8,9 +8,26 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng7BootstrapBreadcrumbModule } from 'ng7-bootstrap-breadcrumb';
-// import { SectionsModule } from './sections/sections.module';
-// import { ComponentsModule } from './components/components.module';
-// import { ExamplesModule } from './examples/examples.module';
+import { NouisliderModule } from 'ng2-nouislider';
+import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
+import { TagInputModule } from 'ngx-chips';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { NgxGalleryModule } from 'ngx-gallery';
+import { ImageUploadModule } from './components/common/image-upload/image-upload.module';
+import { SectionsModule } from './components/sections/sections.module';
+import { ComponentsModule } from './components/components.module';
+
+import { BasicelementsComponent } from './components/basicelements/basicelements.component';
+import { TypographyComponent } from './components/typography/typography.component';
+import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { ComponentsComponent } from './components/components.component';
+import { NotificationComponent } from './components/notification/notification.component';
+import { NgbdModalBasic } from './components/modal/modal.component';
+import { FootersAreasComponent } from './components/footers-areas/footers-areas.component';
+import { TablesAreasComponent } from './components/tables-areas/tables-areas.component';
+import { CommentsAreasComponent } from './components/comments-areas/comments-areas.component';
+import { CardsAreasComponent } from './components/cards-areas/cards-areas.component';
+
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
@@ -32,6 +49,7 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
 @NgModule({
   declarations: [
     AppComponent,
+
     BannerComponent,
     WelcomeComponent,
     HeaderComponent,
@@ -54,7 +72,15 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
     FontAwesomeModule,
     BrowserAnimationsModule,
     NgbModule,
-    Ng7BootstrapBreadcrumbModule
+    Ng7BootstrapBreadcrumbModule,
+    NouisliderModule,
+    JwBootstrapSwitchNg2Module,
+    TagInputModule,
+    AngularMultiSelectModule,
+    NgxGalleryModule,
+    ImageUploadModule,
+    SectionsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
