@@ -28,9 +28,14 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/assets/sass/now-ui-kit.scss",
+              "src/assets/sass/demo.scss",
               "src/styles.scss"
             ],
-            "scripts": [ "node_modules/jquery/dist/jquery.min.js" ],
+            "scripts": [ 
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/rellax/rellax.min.js"
+             ],
             "es5BrowserSupport": true
           },
           "configurations": {

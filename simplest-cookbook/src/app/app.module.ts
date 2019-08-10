@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng7BootstrapBreadcrumbModule } from 'ng7-bootstrap-breadcrumb';
+import { NouisliderModule } from 'ng2-nouislider';
+import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
+import { TagInputModule } from 'ngx-chips';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { NgxGalleryModule } from 'ngx-gallery';
+import { ImageUploadModule } from './components/common/image-upload/image-upload.module';
+import { SectionsModule } from './components/sections/sections.module';
+import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
@@ -24,10 +34,12 @@ import { CookTimeComponent } from './components/cook-time/cook-time.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { IngredientsComponent } from './components/ingredients/ingredients.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
+import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-ratio-helper/toddy-ratio-helper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+
     BannerComponent,
     WelcomeComponent,
     HeaderComponent,
@@ -43,13 +55,24 @@ import { InstructionsComponent } from './components/instructions/instructions.co
     CookTimeComponent,
     DescriptionComponent,
     IngredientsComponent,
-    InstructionsComponent
+    InstructionsComponent,
+    ToddyRatioHelperComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    Ng7BootstrapBreadcrumbModule
+    BrowserAnimationsModule,
+    NgbModule,
+    Ng7BootstrapBreadcrumbModule,
+    NouisliderModule,
+    JwBootstrapSwitchNg2Module,
+    TagInputModule,
+    AngularMultiSelectModule,
+    NgxGalleryModule,
+    ImageUploadModule,
+    SectionsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
