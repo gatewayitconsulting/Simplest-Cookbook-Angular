@@ -22,6 +22,8 @@ import { RecipeListComponent } from './components/recipe-list/recipe-list.compon
 import { BreadcrumbComponent } from './components/common/breadcrumb/breadcrumb.component';
 import { CookTimeComponent } from './components/cook-time/cook-time.component';
 import { DescriptionComponent } from './components/description/description.component';
+import { IngredientsComponent } from './components/ingredients/ingredients.component';
+import { InstructionsComponent } from './components/instructions/instructions.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { DescriptionComponent } from './components/description/description.compo
     RecipeListComponent,
     BreadcrumbComponent,
     CookTimeComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    IngredientsComponent,
+    InstructionsComponent
   ],
   imports: [
     BrowserModule,
