@@ -2,14 +2,12 @@
   <section class="row">
     <h1 class="col-md-12">Cooking Tools</h1>
   </section>
-  <div class="dropdown text-center" ngbDropdown>
-    <button class="btn btn-outline-secondary" id="dropdownBasic" ngbDropdownToggle>
-      Select Cooking Tool
-    </button>
-    <div ngbDropdownMenu aria-labelledby="dropdownBasic">
+  <section ngbDropdown class="dropdown col-md-5 offset-md-5 col-sm-12">
+    <button class="btn btn-primary btn-round dropdown-toggle btn-simple" ngbDropdownToggle>Select Cooking Tool</button>
+    <div ngbDropdownMenu>
       <a class="dropdown-item">Toddy Ratio Helper</a>
     </div>
-  </div>
+  </section>
   <section class="row">
     <app-toddy-ratio-helper></app-toddy-ratio-helper>
   </section>

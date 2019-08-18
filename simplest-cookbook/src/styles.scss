@@ -26,24 +26,6 @@ $default-border: 1px solid $black;
 $white-border: 1px solid $border-white;
 $primary-blue-border: 1px solid $primary-blue;
 
-body {
-  font-family: $font-stack !important;
-  color: $default-body-text;
-  padding-top: 30%;
-}
-
-@media (min-width: $media-query-tablet) {
-  body {
-    padding-top: 15%;
-  }
-}
-
-@media (min-width: $media-query-desktop) {
-  body {
-    padding-top: 7%;
-  }
-}
-
 .noLine {
   text-decoration: none;
 }
