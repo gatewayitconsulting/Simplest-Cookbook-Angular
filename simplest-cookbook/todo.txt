@@ -4,3 +4,8 @@ Fix HTTPS issue
 Properly size images
 Serve images in next gen formats
 Change favicon to cookbook icon
+
+Easy Medium Hard
+5 or less instructions - 15 minutes to 30 minutes
+5 - 15 instructions - 30 minutes to 2 hours
+15 + instructions - 2 + hours
