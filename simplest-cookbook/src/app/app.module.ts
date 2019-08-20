@@ -34,6 +34,7 @@ import { CookTimeComponent } from './components/cook-time/cook-time.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { IngredientsComponent } from './components/ingredients/ingredients.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
+import { ToolsComponent } from './components/tools/tools.component';
 import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-ratio-helper/toddy-ratio-helper.component';
 
 @NgModule({
@@ -56,6 +57,7 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
     DescriptionComponent,
     IngredientsComponent,
     InstructionsComponent,
+    ToolsComponent,
     ToddyRatioHelperComponent
   ],
   imports: [

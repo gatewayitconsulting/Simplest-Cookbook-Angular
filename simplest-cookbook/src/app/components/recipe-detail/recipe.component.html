@@ -4,21 +4,69 @@
     <h2>{{recipe.name}}</h2>
   </div>
   <div class="row">
-    <section class="col-md-8">
+    <section class="col-md-6">
       <h4>Overview</h4>
       <app-cook-time></app-cook-time>
       <app-description></app-description>
     </section>
-    <figure class="col-md-4">
-      <img src="{{recipe.image}}" width="100%" height="100%" />
+    <figure class="col-md-6">
+        <ngb-carousel>
+            <ng-template ngbSlide>
+              <img class="d-block" src="{{recipe.image}}" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Toddy</h5>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img class="d-block" src="{{recipe.image}}" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Cold</h5>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img class="d-block" src="{{recipe.image}}" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Brew</h5>
+              </div>
+            </ng-template>
+        </ngb-carousel>
     </figure>
   </div>
   <div class="row">
-    <section class="col-md-12">
-        <app-ingredients></app-ingredients>
-    </section>
-    <section class="col-md-12">
-        <app-instructions></app-instructions>
-    </section>
+      <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one, config-panel-two, config-panel-three" class="card-plain col-md-12">
+          <ngb-panel id="config-panel-one">
+              <ng-template ngbPanelTitle>
+                  <a class="collapsed collapse-title">
+                        Ingredients
+                    <i class="now-ui-icons arrows-1_minimal-down"></i>
+                  </a>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                  <app-ingredients></app-ingredients>
+              </ng-template>
+          </ngb-panel>
+          <ngb-panel id="config-panel-two">
+              <ng-template ngbPanelTitle>
+                <a class="collapsed collapse-title">
+                      Tools
+                    <i class="now-ui-icons arrows-1_minimal-down"></i>
+                </a>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                  <app-tools></app-tools>
+              </ng-template>
+          </ngb-panel>
+          <ngb-panel id="config-panel-three">
+              <ng-template ngbPanelTitle>
+                <a class="collapsed collapse-title">
+                      Instructions
+                  <i class="now-ui-icons arrows-1_minimal-down"></i>
+                </a>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                  <app-instructions></app-instructions>
+              </ng-template>
+          </ngb-panel>
+      </ngb-accordion>
   </div>
 </div>
