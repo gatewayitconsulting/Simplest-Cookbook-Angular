@@ -7,7 +7,7 @@ import { RecipeService } from './services/recipe/recipe.service';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
-import { RecipeComponent } from './components/recipe-detail/recipe.component';
+import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
 
 const routes: Routes = [
@@ -55,13 +55,13 @@ const routes: Routes = [
       ]
     },
   },
-  {
-    path: 'cooking-tools',
-    component: CookingToolsComponent
-  },
+  // {
+  //   path: 'cooking-tools',
+  //   component: CookingToolsComponent
+  // },
   {
     path: 'home/1/recipe-list/2/recipe/3/recipe/:id',
-    component: RecipeComponent,
+    component: RecipeDetailComponent,
     data: {
       title: '{{dynamicText}}',
       breadcrumb: [

@@ -13,23 +13,23 @@ import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { TagInputModule } from 'ngx-chips';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { NgxGalleryModule } from 'ngx-gallery';
-import { ImageUploadModule } from './components/common/image-upload/image-upload.module';
+import { ImageUploadModule } from './shared/image-upload/image-upload.module';
 import { SectionsModule } from './components/sections/sections.module';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/welcome/banner/banner.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
-import { HeaderComponent } from './components/common/header/header.component';
-import { RecipeComponent } from './components/recipe-detail/recipe.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
-import { FooterComponent } from './components/common/footer/footer.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
 import { AboutComponent } from './components/about/about.component';
 import { MissionStatementComponent } from './components/about/mission-statement/mission-statement.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
-import { BreadcrumbComponent } from './components/common/breadcrumb/breadcrumb.component';
+import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { CookTimeComponent } from './components/cook-time/cook-time.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { IngredientsComponent } from './components/ingredients/ingredients.component';
@@ -44,7 +44,7 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
     BannerComponent,
     WelcomeComponent,
     HeaderComponent,
-    RecipeComponent,
+    RecipeDetailComponent,
     RecipesComponent,
     FooterComponent,
     CookingToolsComponent,

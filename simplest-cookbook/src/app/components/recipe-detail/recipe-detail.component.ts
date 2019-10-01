@@ -6,11 +6,11 @@ import { Recipe } from '../../services/recipe/recipe';
 import { RecipeService } from '../../services/recipe/recipe.service';
 
 @Component({
-  selector: 'app-recipe',
-  templateUrl: './recipe.component.html',
-  styleUrls: ['./recipe.component.scss']
+  selector: 'app-recipe-detail',
+  templateUrl: './recipe-detail.component.html',
+  styleUrls: ['./recipe-detail.component.scss']
 })
-export class RecipeComponent implements OnInit {
+export class RecipeDetailComponent implements OnInit {
   recipe: Recipe;
 
   constructor(
