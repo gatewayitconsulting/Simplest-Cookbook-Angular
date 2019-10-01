@@ -42,7 +42,7 @@ import { CardsAreasComponent } from './cards-areas/cards-areas.component';
         NgbdModalBasic,
         TablesAreasComponent,
         CommentsAreasComponent,
-        CardsAreasComponent,
+        CardsAreasComponent
     ],
     exports:[ ComponentsComponent ]
 })
