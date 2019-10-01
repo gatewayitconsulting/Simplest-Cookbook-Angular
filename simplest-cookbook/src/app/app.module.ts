@@ -14,7 +14,6 @@ import { TagInputModule } from 'ngx-chips';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { ImageUploadModule } from './shared/image-upload/image-upload.module';
-import { SectionsModule } from './components/sections/sections.module';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
@@ -25,8 +24,6 @@ import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.
 import { RecipesComponent } from './components/recipes/recipes.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
-import { AboutComponent } from './components/about/about.component';
-import { MissionStatementComponent } from './components/about/mission-statement/mission-statement.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
@@ -48,8 +45,6 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
     RecipesComponent,
     FooterComponent,
     CookingToolsComponent,
-    AboutComponent,
-    MissionStatementComponent,
     MessagesComponent,
     RecipeListComponent,
     BreadcrumbComponent,
@@ -73,7 +68,6 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
     AngularMultiSelectModule,
     NgxGalleryModule,
     ImageUploadModule,
-    SectionsModule,
     ComponentsModule
   ],
   providers: [],

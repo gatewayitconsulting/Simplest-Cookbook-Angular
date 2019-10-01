@@ -32,39 +32,45 @@
         </ngb-carousel>
     </figure>
   </div>
-  <div class="row">
-      <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one, config-panel-two, config-panel-three" class="card-plain col-md-12">
+  <div class="row" id="accordion" role="tablist">
+      <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one, config-panel-two, config-panel-three" class="card-collapse col-md-12">
           <ngb-panel id="config-panel-one">
               <ng-template ngbPanelTitle>
-                  <a class="collapsed collapse-title">
-                        Ingredients
-                    <i class="now-ui-icons arrows-1_minimal-down"></i>
-                  </a>
+                <a class="collapsed collapse-title" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Ingredients
+                  <i class="material-icons keyboard_arrow_down"></i>
+                </a>
               </ng-template>
-              <ng-template ngbPanelContent>
-                  <app-ingredients></app-ingredients>
+              <ng-template ngbPanelContent class="p-1">
+                  <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <app-ingredients></app-ingredients>
+                  </div>
               </ng-template>
           </ngb-panel>
           <ngb-panel id="config-panel-two">
               <ng-template ngbPanelTitle>
-                <a class="collapsed collapse-title">
+                <a class="collapsed collapse-title" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                       Tools
-                    <i class="now-ui-icons arrows-1_minimal-down"></i>
+                  <i class="material-icons keyboard_arrow_down"></i>
                 </a>
               </ng-template>
               <ng-template ngbPanelContent>
-                  <app-tools></app-tools>
+                  <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <app-tools></app-tools>
+                  </div>
               </ng-template>
           </ngb-panel>
           <ngb-panel id="config-panel-three">
               <ng-template ngbPanelTitle>
-                <a class="collapsed collapse-title">
+                <a class="collapsed collapse-title" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                       Instructions
-                  <i class="now-ui-icons arrows-1_minimal-down"></i>
+                  <i class="material-icons keyboard_arrow_down"></i>
                 </a>
               </ng-template>
               <ng-template ngbPanelContent>
-                  <app-instructions></app-instructions>
+                  <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                    <app-instructions></app-instructions>
+                  </div>
               </ng-template>
           </ngb-panel>
       </ngb-accordion>

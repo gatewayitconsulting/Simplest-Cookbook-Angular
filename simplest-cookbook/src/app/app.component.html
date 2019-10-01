@@ -1,5 +1,7 @@
 <app-header class="row"></app-header>
-
-<router-outlet></router-outlet>
+<app-banner class="row" [ngClass]="bgClass"></app-banner>
+<main class="main main-raised">
+    <router-outlet></router-outlet>
+</main>
 
 <app-footer class="row"></app-footer>

@@ -28,8 +28,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/assets/sass/now-ui-kit.scss",
-              "src/assets/sass/demo.scss",
+              "src/assets/sass/material-kit.scss",
               "src/styles.scss"
             ],
             "scripts": [ 
