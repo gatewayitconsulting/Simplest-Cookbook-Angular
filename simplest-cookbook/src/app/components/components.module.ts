@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 
 import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
+import { UnitOfMeasurementComponent } from './unit-of-measurement/unit-of-measurement.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { ComponentsComponent } from './components.component';
     ],
     declarations: [
         ComponentsComponent,
-        NucleoiconsComponent
+        NucleoiconsComponent,
+        UnitOfMeasurementComponent
     ],
     exports:[ ComponentsComponent ]
 })
