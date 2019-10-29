@@ -33,6 +33,8 @@
             ],
             "scripts": [ 
               "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/material-kit.js",
+              "src/assets/js/bootstrap-material-design.min.js",
               "node_modules/rellax/rellax.min.js"
              ],
             "es5BrowserSupport": true
