@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 import { Recipe } from '../../services/recipe/recipe';
 import { RecipeService } from '../../services/recipe/recipe.service';
@@ -12,6 +14,8 @@ import { RecipeService } from '../../services/recipe/recipe.service';
 })
 export class RecipeDetailComponent implements OnInit {
   recipe: Recipe;
+  faAngleUp = faAngleUp;
+  faAngleDown = faAngleDown;
 
   constructor(
     private route: ActivatedRoute,

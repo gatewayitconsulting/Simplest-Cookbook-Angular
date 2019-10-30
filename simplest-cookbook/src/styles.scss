@@ -8,7 +8,7 @@ $media-query-desktop: 1000px;
 $media-query-desktop-hd: 1200px;
 
 // Fonts
-$font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack: "Roboto", Helvetica, Arial, sans-serif;
 
 // Colors
 $default-body-text: #222;
@@ -29,3 +29,6 @@ $primary-blue-border: 1px solid $primary-blue;
 .noLine {
   text-decoration: none;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

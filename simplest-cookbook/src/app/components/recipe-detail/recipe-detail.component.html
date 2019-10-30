@@ -36,13 +36,13 @@
       <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one, config-panel-two, config-panel-three" class="card-collapse col-md-12">
           <ngb-panel id="config-panel-one">
               <ng-template ngbPanelTitle>
-                <a class="collapsed collapse-title" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Ingredients
-                  <i class="material-icons keyboard_arrow_down"></i>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Ingredients
+                  <i class="material-icons">keyboard_arrow_down</i>
                 </a>
               </ng-template>
               <ng-template ngbPanelContent class="p-1">
-                  <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headinOne" data-parent="#accordion">
+                  <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headinOne">
                     <app-ingredients></app-ingredients>
                   </div>
               </ng-template>

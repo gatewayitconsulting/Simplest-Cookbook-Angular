@@ -33,6 +33,7 @@ import { IngredientsComponent } from './components/ingredients/ingredients.compo
 import { InstructionsComponent } from './components/instructions/instructions.component';
 import { ToolsComponent } from './components/tools/tools.component';
 import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-ratio-helper/toddy-ratio-helper.component';
+import { WINDOW_PROVIDERS } from './services/window/window';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,9 @@ import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-rati
     ImageUploadModule,
     ComponentsModule
   ],
-  providers: [],
+  providers: [
+    WINDOW_PROVIDERS
+  ],
   bootstrap: [AppComponent]
 })
 

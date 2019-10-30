@@ -2,4 +2,19 @@ header {
     a {
         color: white;
     }
+    .navbar-transparent {
+        transition: 500ms ease;
+        background: transparent;
+    }
+    .navbar-transparent.scrolled {
+        background: white !important;
+        a {
+            color: black;
+        }
+    }
+    .navbar.scrolled {
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 8px 6px -6px #999;
+    }
 }
