@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent implements OnInit {
 
-  public constructor (
+  public constructor(
     @Inject(DOCUMENT) private document: Document,
     @Inject(WINDOW) private window: Window
   ) { }
@@ -19,22 +19,15 @@ export class HeaderComponent implements OnInit {
   onWindowScroll() {
       const offset = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
       if (offset < 50) {
-        $('img').removeClass('scrolled');
         $('nav').removeClass('scrolled');
+        $('span').removeClass('scrolled');
       } else {
-        $('img').addClass('scrolled');
         $('nav').addClass('scrolled');
+        $('span').addClass('scrolled');
       }
   }
 
   ngOnInit() {
-    // // Navigation
-    // $(document).ready(function () {
-    //   $('.menu-toggle').click(function () {
-    //     $('ul').toggleClass('opening');
-    //     $(this).toggleClass('open');
-    //   });
-    // });
   }
 
 }

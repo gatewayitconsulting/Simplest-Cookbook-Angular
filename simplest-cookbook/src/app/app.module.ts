@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -56,6 +57,9 @@ import { WINDOW_PROVIDERS } from './services/window/window';
     ToolsComponent,
     ToddyRatioHelperComponent
   ],
+  exports: [
+    MatSidenavModule
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -69,7 +73,8 @@ import { WINDOW_PROVIDERS } from './services/window/window';
     AngularMultiSelectModule,
     NgxGalleryModule,
     ImageUploadModule,
-    ComponentsModule
+    ComponentsModule,
+    MatSidenavModule
   ],
   providers: [
     WINDOW_PROVIDERS
