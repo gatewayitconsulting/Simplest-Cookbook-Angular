@@ -36,3 +36,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .noLine {
   text-decoration: none;
 }
+
+.breadcrumb {
+  background-color: $bone-white !important;
+  box-shadow: 1px 1px 2px 2px lightgray !important;
+}
