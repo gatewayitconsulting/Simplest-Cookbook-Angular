@@ -1,0 +1,15 @@
+@import "../../../styles";
+
+#flavorProfile {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: $media-query-desktop) {
+    #flavorProfile {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -8,7 +8,10 @@ $media-query-desktop: 1000px;
 $media-query-desktop-hd: 1200px;
 
 // Fonts
-$font-stack: "Roboto", Helvetica, Arial, sans-serif;
+$font-stack: "Roboto",
+Helvetica,
+Arial,
+sans-serif;
 
 // Colors
 $default-body-text: #222;
@@ -26,8 +29,15 @@ $default-border: 1px solid $black;
 $white-border: 1px solid $border-white;
 $primary-blue-border: 1px solid $primary-blue;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .card-title {
   font-family: "Roboto Slab", "Helvetica", "Arial", serif;

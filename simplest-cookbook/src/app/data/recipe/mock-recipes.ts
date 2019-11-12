@@ -23,10 +23,10 @@ export const RECIPES: Recipe[] = [
     id: 3,
     name: 'Baked Salmon',
     image: '../../../assets/img/salmon.jpg',
-    minutes: 30,
-    hours: 0,
-    days: 0,
-    description: 'Make delicious cold brew that can serve many.'
+    totalTime: 30,
+    description: 'Make quick and easy baked salmon that tastes fantastic.',
+    flavorProfile: 'Salt & Pepper',
+    category: 'Fish'
   },
   // {
   //   id: 4,
