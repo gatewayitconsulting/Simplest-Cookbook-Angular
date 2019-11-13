@@ -6,7 +6,7 @@
         align-items: stretch;
     }
 
-    @media (min-width: 550px) {
+    @media (min-width: $media-query-small-tablet) {
         ul {
             list-style: none;
         }
