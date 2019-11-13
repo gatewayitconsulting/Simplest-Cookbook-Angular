@@ -1,9 +1,8 @@
 <section id="recipes" class="col-md-12">
-  <div class="row">
-    <div *ngFor="let recipe of recipes" 
-    class="col-md-4 card-deck mx-3">
-      <a routerLink="/home/1/recipe-list/2/recipe/3/recipe/{{recipe.id}}" class="card">
-        <div>
+  <div class="row card-deck m-auto p-2">
+    <div *ngFor="let recipe of recipes" class="col-md-12 card">
+      <a routerLink="/home/1/recipe-list/2/recipe/3/recipe/{{recipe.id}}">
+        <div class="row">
           <img src="{{recipe.image}}" class="card-img-top" />
         </div>
         <div class="card-body row">
