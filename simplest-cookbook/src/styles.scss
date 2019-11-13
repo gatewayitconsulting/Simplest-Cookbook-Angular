@@ -23,6 +23,7 @@ $link: #1EAEDB;
 $link-hover: #0FA0CE;
 $primary-blue: #33C3F0;
 $data-blue: #11DFC7;
+$rose: #e91e63;
 
 // Borders
 $default-border: 1px solid $black;
@@ -50,4 +51,7 @@ body {
 .breadcrumb {
   background-color: $bone-white !important;
   box-shadow: 1px 1px 2px 2px lightgray !important;
+  a {
+    color: $rose;
+  }
 }
