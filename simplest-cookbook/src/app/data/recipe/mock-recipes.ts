@@ -5,10 +5,10 @@ export const RECIPES: Recipe[] = [
     id: 1,
     name: 'Toddy Cold Brew',
     image: '../../../assets/img/toddy.jpg',
-    totalTime: 30,
+    totalTime: 720,
     description: 'Make quick and easy baked salmon that tastes fantastic.',
-    flavorProfile: 'Salt & Pepper',
-    category: 'Fish'
+    flavorProfile: 'Milk Chocolate & Berries',
+    category: 'Coffee'
   },
   {
     id: 2,

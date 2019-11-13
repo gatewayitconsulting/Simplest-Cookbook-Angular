@@ -36,22 +36,22 @@
       <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one, config-panel-two, config-panel-three" class="card-collapse col-md-12">
           <ngb-panel id="config-panel-one">
               <ng-template ngbPanelTitle>
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="text-left">
+                <a data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed collapse-title">
                   Ingredients
-                  <i class="material-icons float-right">keyboard_arrow_down</i>
+                  <button class="btn btn-rose ml-5 mr-auto">Show/Hide</button>
                 </a>
               </ng-template>
               <ng-template ngbPanelContent class="p-1">
-                  <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headinOne">
+                  <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                     <app-ingredients></app-ingredients>
                   </div>
               </ng-template>
           </ngb-panel>
           <ngb-panel id="config-panel-two">
               <ng-template ngbPanelTitle>
-                <a class="collapsed collapse-title" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="collapsed collapse-title" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                   Tools
-                  <i class="material-icons text-right">keyboard_arrow_down</i>
+                  <button class="btn btn-rose ml-5 mr-auto">Show/Hide</button>
                 </a>
               </ng-template>
               <ng-template ngbPanelContent>
@@ -62,9 +62,9 @@
           </ngb-panel>
           <ngb-panel id="config-panel-three">
               <ng-template ngbPanelTitle>
-                <a class="collapsed collapse-title" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <a class="collapsed collapse-title" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                   Instructions
-                  <i class="material-icons text-right">keyboard_arrow_down</i>
+                  <button class="btn btn-rose ml-5 mr-auto">Show/Hide</button>
                 </a>
               </ng-template>
               <ng-template ngbPanelContent>
