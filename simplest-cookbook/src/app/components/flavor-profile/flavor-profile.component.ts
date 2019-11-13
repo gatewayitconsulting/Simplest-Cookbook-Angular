@@ -4,13 +4,15 @@ import { Location } from '@angular/common';
 
 import { Recipe } from '../../services/recipe/recipe';
 import { RecipeService } from '../../services/recipe/recipe.service';
+import { RECIPES } from 'src/app/data/recipe/mock-recipes';
 
 @Component({
-  selector: 'app-recipe-detail',
-  templateUrl: './recipe-detail.component.html',
-  styleUrls: ['./recipe-detail.component.scss']
+  selector: 'app-flavor-profile',
+  templateUrl: './flavor-profile.component.html',
+  styleUrls: ['./flavor-profile.component.scss']
 })
-export class RecipeDetailComponent implements OnInit {
+export class FlavorProfileComponent implements OnInit {
+
   recipe: Recipe;
 
   constructor(

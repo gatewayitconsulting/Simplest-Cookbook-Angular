@@ -2,8 +2,8 @@ export class Recipe {
     id: number;
     name: string;
     image: string;
-    minutes: number;
-    hours: number;
-    days: number;
+    totalTime: number;
     description: string;
+    flavorProfile: string;
+    category: string;
   }
