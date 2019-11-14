@@ -26,7 +26,7 @@ import { RecipesComponent } from './components/recipes/recipes.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
 import { MessagesComponent } from './components/messages/messages.component';
-import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
+import { RecipeListComponent } from './pages/recipe-list/recipe-list.component';
 import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { CookTimeComponent } from './components/cook-time/cook-time.component';
 import { DescriptionComponent } from './components/description/description.component';

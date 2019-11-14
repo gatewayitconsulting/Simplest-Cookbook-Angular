@@ -5,7 +5,7 @@ import { Recipe } from './services/recipe/recipe';
 import { RecipeService } from './services/recipe/recipe.service';
 
 import { HomeComponent } from './pages/home/home.component';
-import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
+import { RecipeListComponent } from './pages/recipe-list/recipe-list.component';
 import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
 import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
