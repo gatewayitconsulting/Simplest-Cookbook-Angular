@@ -18,8 +18,8 @@ import { ImageUploadModule } from './shared/image-upload/image-upload.module';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
-import { BannerComponent } from './components/welcome/banner/banner.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 import { RecipesComponent } from './components/recipes/recipes.component';

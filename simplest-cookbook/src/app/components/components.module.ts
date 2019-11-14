@@ -30,6 +30,6 @@ import { UnitOfMeasurementComponent } from './unit-of-measurement/unit-of-measur
         NucleoiconsComponent,
         UnitOfMeasurementComponent
     ],
-    exports:[ ComponentsComponent ]
+    exports: [ ComponentsComponent ]
 })
 export class ComponentsModule { }
