@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Recipe } from './services/recipe/recipe';
 import { RecipeService } from './services/recipe/recipe.service';
 
-import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { HomeComponent } from './pages/home/home.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { CookingToolsComponent } from './components/cooking-tools/cooking-tools.component';
 import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
@@ -27,7 +27,7 @@ const routes: Routes = [
   },
   {
     path: 'home/1',
-    component: WelcomeComponent,
+    component: HomeComponent,
     data: {
       title: 'Home',
       breadcrumb: [

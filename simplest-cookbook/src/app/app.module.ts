@@ -19,7 +19,7 @@ import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
@@ -44,7 +44,7 @@ import { FlavorProfileComponent } from './components/flavor-profile/flavor-profi
     AppComponent,
 
     BannerComponent,
-    WelcomeComponent,
+    HomeComponent,
     HeaderComponent,
     RecipeDetailComponent,
     RecipesComponent,
