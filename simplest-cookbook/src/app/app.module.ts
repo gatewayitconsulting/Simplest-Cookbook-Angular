@@ -38,11 +38,14 @@ import { SearchBannerComponent } from './shared/search-banner/search-banner.comp
 import { SearchComponent } from './shared/search/search.component';
 import { FlavorProfileComponent } from './components/flavor-profile/flavor-profile.component';
 import { CategoryComponent } from './components/category/category.component';
+import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { UnitOfMeasurementComponent } from './components/unit-of-measurement/unit-of-measurement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    NucleoiconsComponent,
+    MessagesComponent,
     BannerComponent,
     HomeComponent,
     HeaderComponent,
@@ -50,7 +53,6 @@ import { CategoryComponent } from './components/category/category.component';
     RecipesComponent,
     FooterComponent,
     CookingToolsComponent,
-    MessagesComponent,
     RecipeListComponent,
     BreadcrumbComponent,
     CookTimeComponent,
@@ -62,7 +64,8 @@ import { CategoryComponent } from './components/category/category.component';
     SearchBannerComponent,
     SearchComponent,
     FlavorProfileComponent,
-    CategoryComponent
+    CategoryComponent,
+    UnitOfMeasurementComponent
   ],
   exports: [
     MatSidenavModule
