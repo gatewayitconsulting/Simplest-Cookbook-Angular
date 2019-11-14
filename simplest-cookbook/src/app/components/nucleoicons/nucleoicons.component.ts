@@ -6,17 +6,14 @@ import { Component, OnInit, Inject, Renderer, ElementRef, OnDestroy } from '@ang
     styleUrls: ['./nucleoicons.component.scss']
 })
 export class NucleoiconsComponent implements OnInit, OnDestroy {
-
-    constructor( private element : ElementRef) {}
-
+    constructor( private element: ElementRef) {}
     ngOnInit() {
+        // tslint:disable-next-line: prefer-const
         let navbar = document.getElementsByTagName('app-navbar')[0].children[0];
-
-      navbar.classList.remove('navbar-transparent');
+        navbar.classList.remove('navbar-transparent');
     }
-
-    ngOnDestroy(){
+    ngOnDestroy() {
+        // tslint:disable-next-line: prefer-const
         let navbar = document.getElementsByTagName('app-navbar')[0].children[0];
-
     }
 }

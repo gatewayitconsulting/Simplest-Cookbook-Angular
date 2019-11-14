@@ -15,7 +15,6 @@ import { TagInputModule } from 'ngx-chips';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { ImageUploadModule } from './shared/image-upload/image-upload.module';
-import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/banner/banner.component';
@@ -81,7 +80,6 @@ import { CategoryComponent } from './components/category/category.component';
     AngularMultiSelectModule,
     NgxGalleryModule,
     ImageUploadModule,
-    ComponentsModule,
     MatSidenavModule
   ],
   providers: [
