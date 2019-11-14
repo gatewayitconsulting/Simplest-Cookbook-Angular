@@ -38,6 +38,7 @@ import { WINDOW_PROVIDERS } from './services/window/window';
 import { SearchBannerComponent } from './shared/search-banner/search-banner.component';
 import { SearchComponent } from './shared/search/search.component';
 import { FlavorProfileComponent } from './components/flavor-profile/flavor-profile.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { FlavorProfileComponent } from './components/flavor-profile/flavor-profi
     ToddyRatioHelperComponent,
     SearchBannerComponent,
     SearchComponent,
-    FlavorProfileComponent
+    FlavorProfileComponent,
+    CategoryComponent
   ],
   exports: [
     MatSidenavModule

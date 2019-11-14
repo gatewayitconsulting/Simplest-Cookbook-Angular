@@ -1,0 +1,15 @@
+@import "../../../styles";
+
+#category {
+    position: relative;
+    bottom: 2em;
+    width: 100%;
+}
+
+@media (min-width: $media-query-desktop) {
+    #category {
+        position: absolute;
+        bottom: 2em;
+        width: 100%;
+    }
+}
