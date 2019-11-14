@@ -31,7 +31,7 @@ import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { CookTimeComponent } from './components/cook-time/cook-time.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { IngredientsComponent } from './components/ingredients/ingredients.component';
-import { InstructionsComponent } from './components/instructions/instructions.component';
+import { StepsComponent } from './components/steps/steps.component';
 import { ToolsComponent } from './components/tools/tools.component';
 import { ToddyRatioHelperComponent } from './components/cooking-tools/toddy-ratio-helper/toddy-ratio-helper.component';
 import { WINDOW_PROVIDERS } from './services/window/window';
@@ -56,7 +56,7 @@ import { FlavorProfileComponent } from './components/flavor-profile/flavor-profi
     CookTimeComponent,
     DescriptionComponent,
     IngredientsComponent,
-    InstructionsComponent,
+    StepsComponent,
     ToolsComponent,
     ToddyRatioHelperComponent,
     SearchBannerComponent,
