@@ -1,11 +1,11 @@
-<section id="recipes" class="col-md-12">
-  <div class="row card-deck m-auto p-2">
-    <div *ngFor="let recipe of recipes" class="col-lg-3 col-md-4 card">
+<section id="recipes" class="col-md-12 mt-5">
+  <div class="row cards mx-1">
+    <div *ngFor="let recipe of recipes" class="col-lg-4 col-md-4 col-sm-12 mx-3 card">
       <a routerLink="/home/1/recipe-list/2/recipe/3/recipe/{{recipe.id}}">
-        <div class="row">
-          <img src="{{recipe.image}}" class="card-img-top" />
+        <div class="card-header card-header-image">
+          <img src="{{recipe.image}}" />
         </div>
-        <div class="card-body row">
+        <div class="card-body">
           <section class="col-md-12 pl-0">
               <h4 class="card-title">{{ recipe.name }}</h4>
           </section>
