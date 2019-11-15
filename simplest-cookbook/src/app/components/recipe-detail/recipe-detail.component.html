@@ -11,33 +11,14 @@
       <app-category></app-category>
     </section>
     <figure class="col-md-6">
-        <ngb-carousel>
-            <ng-template ngbSlide>
-              <img class="d-block w-100" src="{{recipe.image}}" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Salmon</h5>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <img class="d-block w-100" src="{{recipe.image}}" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Salmon</h5>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <img class="d-block w-100" src="{{recipe.image}}" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Salmon</h5>
-              </div>
-            </ng-template>
-        </ngb-carousel>
+        <app-slider></app-slider>
     </figure>
   </div>
   <div class="row" id="accordion" role="tablist">
       <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one, config-panel-two, config-panel-three" class="card-collapse col-md-12">
           <ngb-panel id="config-panel-one">
               <ng-template ngbPanelTitle>
-                <a data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed collapse-title">
+                <a class="collapsed collapse-title" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Ingredients
                   <button class="btn btn-rose ml-5 mr-auto">Show/Hide</button>
                 </a>

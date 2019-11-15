@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -40,6 +39,7 @@ import { FlavorProfileComponent } from './components/flavor-profile/flavor-profi
 import { CategoryComponent } from './components/category/category.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { UnitOfMeasurementComponent } from './components/unit-of-measurement/unit-of-measurement.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -65,11 +65,10 @@ import { UnitOfMeasurementComponent } from './components/unit-of-measurement/uni
     SearchComponent,
     FlavorProfileComponent,
     CategoryComponent,
-    UnitOfMeasurementComponent
+    UnitOfMeasurementComponent,
+    SliderComponent
   ],
-  exports: [
-    MatSidenavModule
-  ],
+  exports: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -82,8 +81,7 @@ import { UnitOfMeasurementComponent } from './components/unit-of-measurement/uni
     TagInputModule,
     AngularMultiSelectModule,
     NgxGalleryModule,
-    ImageUploadModule,
-    MatSidenavModule
+    ImageUploadModule
   ],
   providers: [
     WINDOW_PROVIDERS

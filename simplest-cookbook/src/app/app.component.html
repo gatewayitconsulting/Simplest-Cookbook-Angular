@@ -1,8 +1,9 @@
-<mat-drawer-container class="example-container" [hasBackdrop]="true"></mat-drawer-container>
-<app-header class="row"></app-header>
-<app-banner class="row" *ngIf="router.url === '/home/1'"></app-banner>
-<app-search-banner class="row" *ngIf="router.url !== '/home/1'"></app-search-banner>
-<main class="main main-raised">
-    <router-outlet></router-outlet>
-</main>
-<app-footer class="row"></app-footer>
+<div class="sidebar-collapse">
+    <app-header class="row"></app-header>
+    <app-banner class="row" *ngIf="router.url === '/home/1'"></app-banner>
+    <app-search-banner class="row" *ngIf="router.url !== '/home/1'"></app-search-banner>
+    <main class="main main-raised">
+        <router-outlet></router-outlet>
+    </main>
+    <app-footer class="row"></app-footer>
+</div>
