@@ -17,17 +17,8 @@ header {
         -moz-box-shadow: 0 8px 6px -6px #999;
         box-shadow: 0 8px 6px -6px #999;
     }
-    .navbar-toggler-icon.scrolled {
-        background-color: black !important;
-    }
-    .sidenav {
-        width: 38vw;
-        height: 100vh;
-        ul {
-            list-style: none;
-        }
-        a {
-            color: black;
-        }
+    .collapse:not(.show) {
+        display: block;
+        padding-top: 1rem;
     }
 }

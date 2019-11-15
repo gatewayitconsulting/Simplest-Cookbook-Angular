@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -69,9 +68,7 @@ import { SliderComponent } from './components/slider/slider.component';
     UnitOfMeasurementComponent,
     SliderComponent
   ],
-  exports: [
-    MatSidenavModule
-  ],
+  exports: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -84,8 +81,7 @@ import { SliderComponent } from './components/slider/slider.component';
     TagInputModule,
     AngularMultiSelectModule,
     NgxGalleryModule,
-    ImageUploadModule,
-    MatSidenavModule
+    ImageUploadModule
   ],
   providers: [
     WINDOW_PROVIDERS
