@@ -40,6 +40,7 @@ import { FlavorProfileComponent } from './components/flavor-profile/flavor-profi
 import { CategoryComponent } from './components/category/category.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { UnitOfMeasurementComponent } from './components/unit-of-measurement/unit-of-measurement.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { UnitOfMeasurementComponent } from './components/unit-of-measurement/uni
     SearchComponent,
     FlavorProfileComponent,
     CategoryComponent,
-    UnitOfMeasurementComponent
+    UnitOfMeasurementComponent,
+    SliderComponent
   ],
   exports: [
     MatSidenavModule

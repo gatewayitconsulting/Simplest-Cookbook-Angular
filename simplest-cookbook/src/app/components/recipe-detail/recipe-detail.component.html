@@ -11,26 +11,7 @@
       <app-category></app-category>
     </section>
     <figure class="col-md-6">
-        <ngb-carousel>
-            <ng-template ngbSlide>
-              <img class="d-block w-100" src="{{recipe.image}}" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Salmon</h5>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <img class="d-block w-100" src="{{recipe.image}}" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Salmon</h5>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <img class="d-block w-100" src="{{recipe.image}}" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Salmon</h5>
-              </div>
-            </ng-template>
-        </ngb-carousel>
+        <app-slider></app-slider>
     </figure>
   </div>
   <div class="row" id="accordion" role="tablist">
