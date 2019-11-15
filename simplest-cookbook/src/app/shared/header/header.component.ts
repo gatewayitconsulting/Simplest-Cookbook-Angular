@@ -1,7 +1,9 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { WINDOW } from '../../services/window/window';
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
+
+declare var $: any;
 
 @Component({
   selector: 'app-header',
