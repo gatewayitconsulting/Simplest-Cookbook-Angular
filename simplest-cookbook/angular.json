@@ -34,7 +34,6 @@
             "scripts": [ 
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/assets/js/bootstrap-material-design.min.js",
               "src/assets/js/material-kit.js",
               "node_modules/rellax/rellax.min.js"
              ],
