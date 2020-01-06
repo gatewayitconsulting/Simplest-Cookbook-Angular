@@ -1,20 +1,8 @@
 <section class="row m-1" id="tools">
-    <div class="author col-md-3 my-3">
+    <div class="author col-md-3 my-3" *ngFor="let tool of recipe.tools">
         <p>
-            <img src="../../../assets/img/pour-over.jpg" alt="..." class="avatar img-raised" height="50px" width="50px">
-            <span>Baking Tray</span>
-        </p>
-    </div>
-    <div class="author col-md-3 my-3">
-        <p>
-            <img src="../../../assets/img/pour-over.jpg" alt="..." class="avatar img-raised" height="50px" width="50px">
-            <span>Oil Brush</span>
-        </p>
-    </div>
-    <div class="author col-md-3 my-3">
-        <p>
-            <img src="../../../assets/img/pour-over.jpg" alt="..." class="avatar img-raised" height="50px" width="50px">
-            <span>Spatula</span>
+            <img src="{{tool.image}}" alt="..." class="avatar img-raised" height="50px" width="50px">
+            <span>{{tool.name}}</span>
         </p>
     </div>
 </section>

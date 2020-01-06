@@ -1,26 +1,8 @@
 <section class="row m-1" id="ingredients">
-    <div class="author col-md-3 my-3">
+    <div class="author col-md-3 my-3" *ngFor="let ingredient of recipe.ingredients">
         <p>
-            <img src="../../../assets/img/salmon.jpg" alt="..." class="avatar img-raised" height="50px" width="50px">
-            <span>Salmon</span>
-        </p>
-    </div>
-    <div class="author col-md-3 my-3">
-        <p>
-            <img src="../../../assets/img/salmon.jpg" alt="..." class="avatar img-raised" height="50px" width="50px">
-            <span>Salt</span>
-        </p>
-    </div>
-    <div class="author col-md-3 my-3">
-        <p>
-            <img src="../../../assets/img/salmon.jpg" alt="..." class="avatar img-raised" height="50px" width="50px">
-            <span>Pepper</span>
-        </p>
-    </div>
-    <div class="author col-md-3 my-3">
-        <p>
-            <img src="../../../assets/img/salmon.jpg" alt="..." class="avatar img-raised" height="50px" width="50px">
-            <span>Avocado Oil</span>
+            <img src="{{ingredient.image}}" alt="..." class="avatar img-raised" height="50px" width="50px">
+            <span>{{ingredient.name}}</span>
         </p>
     </div>
 </section>
