@@ -55,3 +55,24 @@ body {
     color: $rose;
   }
 }
+
+
+// Temporary Bug Fixes 1/5/2020 for navbar responsive
+.navbar-brand {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-size: 1.5rem !important;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  color: $bone-white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $bone-white !important;
+}
+
+@media (max-width: 991px) {
+  .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon {
+    background-color: transparent !important;
+  }
+}
