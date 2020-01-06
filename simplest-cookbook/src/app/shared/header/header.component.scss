@@ -6,7 +6,10 @@ header {
     }
     .navbar-transparent {
         transition: 500ms ease;
-        background: transparent;
+        background: black;
+        @media (min-width: 750px) {
+            background: transparent;
+        }
     }
     .navbar-transparent.scrolled {
         background: white !important;
@@ -36,5 +39,11 @@ header {
     }
     .dropdown > .dropdown-toggle:active {
         pointer-events: none;
+    }
+    .navbar-nav {
+        padding-top: 2rem;
+        @media (min-width: 750px) {
+            padding-top: 0;
+        }
     }
 }
