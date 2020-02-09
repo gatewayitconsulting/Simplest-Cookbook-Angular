@@ -1,9 +1,7 @@
-<div class="sidebar-collapse">
-    <app-header class="row"></app-header>
-    <app-banner class="row" *ngIf="router.url === '/home/1'"></app-banner>
-    <app-search-banner class="row" *ngIf="router.url !== '/home/1'"></app-search-banner>
-    <main class="main main-raised">
-        <router-outlet></router-outlet>
-    </main>
-    <app-footer class="row"></app-footer>
-</div>
+<app-header></app-header>
+<app-banner *ngIf="router.url === '/home/1'"></app-banner>
+<app-search-banner *ngIf="router.url !== '/home/1'"></app-search-banner>
+<main class="main main-raised" role="main">
+    <router-outlet></router-outlet>
+</main>
+<app-footer></app-footer>

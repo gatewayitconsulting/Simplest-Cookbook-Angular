@@ -1,30 +1,19 @@
-<header class="col-md-12">
-  <nav class="navbar navbar-transparent fixed-top navbar-expand-lg" id="sectionsNav">
-      <div class="container">
-        <div class="navbar-translate">
-          <a class="navbar-brand" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-            Simplest Cookbook</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link" routerLink="/home/1/recipe-list/2">
-                Recipes
-              </a>
-            </li>
-            <!-- <li class="button-container nav-item iframe-extern">
-              <a href="https://www.creative-tim.com/product/material-kit-pro?ref=presentation" target="_blank" class="btn  btn-rose   btn-round btn-block">
-                <i class="material-icons">shopping_cart</i> Buy Now
-              </a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
+<header>
+  <nav class="navbar navbar-light navbar-transparent fixed-top navbar-expand-lg py-3 px-4">
+    <a class="navbar-brand" routerLink="/">
+      Simplest Cookbook
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto text-right">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a href="#" class="nav-link" routerLink="/home/1/recipe-list/2">
+            Recipes
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
