@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { Router, NavigationStart, NavigationEnd } from '@angular/router';
+import { Location, PopStateEvent } from '@angular/common';
 import { DOCUMENT } from '@angular/common';
 import { WINDOW } from '../../services/window/window';
 
@@ -11,9 +13,14 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
+  private lastPoppedUrl: string;
+  private yScrollStack: number[] = [];
+
   public constructor(
     @Inject(DOCUMENT) private document: Document,
-    @Inject(WINDOW) private window: Window
+    @Inject(WINDOW) private window: Window,
+    private router: Router,
+    private location: Location
   ) { }
 
   @HostListener('window:scroll', [])
@@ -31,6 +38,23 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.location.subscribe((ev:PopStateEvent) => {
+      this.lastPoppedUrl = ev.url;
+    });
+    this.router.events.subscribe((ev:any) => {
+        if (ev instanceof NavigationStart) {
+            if (ev.url != this.lastPoppedUrl) {
+                this.yScrollStack.push(window.scrollY);
+            }
+        } else if (ev instanceof NavigationEnd) {
+            if (ev.url == this.lastPoppedUrl) {
+                this.lastPoppedUrl = undefined;
+                window.scrollTo(0, this.yScrollStack.pop());
+            } else {
+                window.scrollTo(0, 0);
+            }
+        }
+    });
   }
 
 }
